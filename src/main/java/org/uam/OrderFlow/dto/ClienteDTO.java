@@ -1,21 +1,18 @@
 package org.uam.OrderFlow.dto;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
+//Data Transfer Object
+//patrón de diseño utilizado para transportar datos entre capas
 public record ClienteDTO(
         UUID id,
-        String primerNombre,
-        String primerApellido,
-        String segundoNombre,
-        String segundoApellido,
-        String email,
-        String telefono,
-        String direccion,
-        String cedula,
+        UsuarioDTO usuario,           //anidamos el usuario
         String codigoCliente,
-        Double limiteCredito,
-        Double saldoDisponible,
-        String tipoCliente,
+        BigDecimal limiteCredito,
+        BigDecimal saldoDisponible,
+        BigDecimal totalCompras,
+        String observaciones,
         Boolean activo
 ) {
 }
