@@ -3,7 +3,7 @@ package org.uam.OrderFlow.dto;
 import java.util.UUID;
 
 public record UsuarioDTO(
-        UUID id,
+        GenericoDTO genericoDTO,
         String primerNombre,
         String primerApellido,
         String segundoNombre,
