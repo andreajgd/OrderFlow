@@ -56,17 +56,3 @@ OrderFlow/
 │
 └── README.md
 ```
-
-## 📡 Endpoints de la API
-
-### 🔹 Cliente
-
-**Base URL:** `/cliente`
-
-| Método | Endpoint | Descripción | Código de Respuesta |
-|--------|----------|------------|---------------------|
-| GET | `/cliente/all` | Obtener todos los clientes | 200 OK |
-| GET | `/cliente/{id}` | Obtener cliente por ID (UUID) | 200 OK |
-| POST | `/cliente/create` | Crear un nuevo cliente | 201 CREATED |
-| PUT | `/cliente/{id}` | Actualizar cliente existente | 200 OK |
-| DELETE | `/cliente/{id}` | Eliminar cliente | 204 NO CONTENT |
